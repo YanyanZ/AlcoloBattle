@@ -1,0 +1,34 @@
+<scene formatVersion="1.0.0">
+    <!--environment-->
+    <environment>
+        <SceneManager name="SceneManager" id="" type="OctreeSceneManager" />
+        <colourAmbient r="0" g="0" b="0" a="0" />
+        <!--Skys-->
+        <skyBox active="true" drawfirst="true" material="ML/SkyBox" distance="300" />
+        <fog mode="none" start="0" end="1000" density="0">
+            <colour r="0.5" g="0.5" b="0.5" a="1" />
+        </fog>
+        <viewport name="Viewport1" id="1" index="1">
+            <colour r="0.5" g="0.5" b="0.5" a="1" />
+        </viewport>
+        <camera name="Camera" viewMode="0" polyMode="3" fov="39.76789">
+            <clipping near="0.3" far="1000" />
+            <position x="100" y="25" z="0" />
+            <rotation qw="-0.6963643" qx="0.1227878" qy="-0.6963643" qz="-0.1227878" />
+        </camera>
+    </environment>
+    <light name="Light" id="Light" type="directional">
+        <directionVector x="0.2" y="-1" z="0.2" />
+    </light>
+    <!--Nodes-->
+    <nodes>
+        <node name="Ground" id="Ground">
+            <position x="0" y="-0.5" z="0" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="100" y="1" z="100" />
+            <entity name="Ground" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+    </nodes>
+</scene>

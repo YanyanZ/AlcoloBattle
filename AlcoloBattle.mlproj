@@ -7,24 +7,68 @@ name: "AlcoloBattle"
 builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
 folder {
   name: "knowledge"
+  file {
+    name: "global.mlkb"
+    location: "knowledge/global.mlkb"
+  }
 }
 folder {
   name: "navigation"
+  file {
+    name: "path.mlnv"
+    location: "navigation/path.mlnv"
+  }
 }
 folder {
   name: "population"
+  file {
+    name: "public.mlpop"
+    location: "simulation/public.mlpop"
+  }
 }
 folder {
   name: "prototypes"
+  file {
+    name: "barman.mlent"
+    location: "prototypes/barman.mlent"
+  }
+  file {
+    name: "client.mlent"
+    location: "prototypes/client.mlent"
+  }
+  file {
+    name: "securit\351.mlent"
+    location: "prototypes/securit\351.mlent"
+  }
 }
 folder {
   name: "sandbox"
+  file {
+    name: "bar.sbx"
+    location: "sandbox/bar.sbx"
+  }
 }
 folder {
   name: "scene"
+  file {
+    name: "bar.scene"
+    location: "scene/bar.scene"
+  }
 }
 folder {
   name: "trees"
+  file {
+    name: "barman.mlbt"
+    location: "decision/barman.mlbt"
+  }
+  file {
+    name: "client.mlbt"
+    location: "decision/client.mlbt"
+  }
+  file {
+    name: "securit\351.mlbt"
+    location: "decision/securit\351.mlbt"
+  }
 }
 file {
   name: "AlcoloBattle.mlsim"

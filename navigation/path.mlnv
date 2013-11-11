@@ -1,0 +1,28 @@
+version {
+  major: 0
+  minor: 3
+  patch: 0
+}
+configuration {
+  inputFilePath: "scene/bar.scene"
+  terrainSamplingStepSize: 1
+  voxelSize: 0.3
+  voxelHeight: 0.2
+  tileSize: 32
+  navigation {
+    minimumCeilingClearance: 2
+    maximumStepHeight: 0.3
+    minimumObstacleClearance: 0.3
+    maximumSlope: 45
+  }
+  meshGeneration {
+    regionMinSize: 8
+    regionMergeSize: 20
+    monotonePartioning: false
+    edgeMaxError: 1.3
+    edgeMaxLength: 12
+    polyMaxNbVertices: 6
+    sampleDist: 6
+    sampleMaxError: 1
+  }
+}

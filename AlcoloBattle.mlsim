@@ -3,11 +3,20 @@ version {
   minor: 4
   patch: 0
 }
+knowledge {
+  knowledgeFile: "knowledge/global.mlkb"
+}
 action {
+}
+sandbox {
+  sbxFile: "sandbox/bar.sbx"
 }
 update {
   fixedUpdateTimeDelta: 1
   numThreads: 1
   useFixedUpdateTimeDelta: false
 }
+prototypeLibrary: "prototypes/barman.mlent"
+prototypeLibrary: "prototypes/client.mlent"
+prototypeLibrary: "prototypes/securit\351.mlent"
 debugger: false

@@ -1,0 +1,24 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{980a53a4-4547-40ef-97b6-45523c400572}"
+name: "securit\351"
+description: ""
+children {
+  type: Node
+  name: "f4709ae3-5e73-4b0f-9a09-50a30251c284"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+}

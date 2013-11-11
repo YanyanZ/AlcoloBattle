@@ -1,0 +1,24 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{31a0c5fd-c4ea-4c07-829c-cec36052185d}"
+name: "barman"
+description: ""
+children {
+  type: Node
+  name: "bd3cf764-f82d-46aa-b3cb-4e1e215c226f"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+}
