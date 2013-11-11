@@ -1,0 +1,13 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+action {
+}
+update {
+  fixedUpdateTimeDelta: 1
+  numThreads: 1
+  useFixedUpdateTimeDelta: false
+}
+debugger: false

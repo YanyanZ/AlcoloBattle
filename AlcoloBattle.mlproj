@@ -1,0 +1,32 @@
+version {
+  major: 0
+  minor: 3
+  patch: 0
+}
+name: "AlcoloBattle"
+builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
+folder {
+  name: "knowledge"
+}
+folder {
+  name: "navigation"
+}
+folder {
+  name: "population"
+}
+folder {
+  name: "prototypes"
+}
+folder {
+  name: "sandbox"
+}
+folder {
+  name: "scene"
+}
+folder {
+  name: "trees"
+}
+file {
+  name: "AlcoloBattle.mlsim"
+  location: "AlcoloBattle.mlsim"
+}
