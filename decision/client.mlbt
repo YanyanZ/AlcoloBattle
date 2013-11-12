@@ -21,4 +21,35 @@ children {
   properties {
     type: RootProperties
   }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "1fab876b-c5c7-4b85-843c-8c26e6aa3564"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5159
+          y: 2700
+          z: 0
+        }
+        label: "debugOut"
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "debugOut"
+            parameters {
+              type: StringType
+              name: "text"
+              kbSelection: plainValue
+              stringValue: "Test"
+            }
+          }
+        }
+      }
+    }
+  }
 }
