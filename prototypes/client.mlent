@@ -8,7 +8,7 @@ ancestor: ""
 component {
   name: "Action"
   uuid: "{dc6f3a6c-ee36-49c9-a767-0d69d17e27ef}"
-  enable: false
+  enable: true
   content {
     type: Action
     [mlv.toolset.simulation.proto.PrototypeAction.extension] {
@@ -40,7 +40,7 @@ component {
 component {
   name: "Navigation"
   uuid: "{13b33328-838b-4b6d-b8ef-765aa5c78cab}"
-  enable: false
+  enable: true
   content {
     type: Navigation
     [mlv.toolset.simulation.proto.PrototypeNavigation.extension] {
@@ -63,16 +63,16 @@ component {
 component {
   name: "Sandbox"
   uuid: "{78924244-8b44-44d6-b79b-346209159ea7}"
-  enable: false
+  enable: true
   content {
     type: Sandbox
     [mlv.toolset.simulation.proto.PrototypeSandbox.extension] {
-      mesh: ""
-      hasScale: false
+      mesh: "Puppet.mesh"
+      hasScale: true
       scale {
-        x: 1
-        y: 1
-        z: 1
+        x: 2
+        y: 2
+        z: 2
       }
       hasOrientation: false
       orientation {
@@ -81,11 +81,11 @@ component {
         y: 0
         z: 0
       }
-      hasColor: false
+      hasColor: true
       color {
-        r: 0
-        g: 0
-        b: 0
+        r: 23
+        g: 54
+        b: 255
       }
     }
   }

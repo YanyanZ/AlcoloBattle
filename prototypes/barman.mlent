@@ -29,7 +29,7 @@ component {
 component {
   name: "Decision"
   uuid: "{66a3232e-e60c-4f54-bf22-33843a8d6875}"
-  enable: false
+  enable: true
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
@@ -63,16 +63,16 @@ component {
 component {
   name: "Sandbox"
   uuid: "{78924244-8b44-44d6-b79b-346209159ea7}"
-  enable: false
+  enable: true
   content {
     type: Sandbox
     [mlv.toolset.simulation.proto.PrototypeSandbox.extension] {
-      mesh: ""
-      hasScale: false
+      mesh: "Puppet.mesh"
+      hasScale: true
       scale {
-        x: 1
-        y: 1
-        z: 1
+        x: 2
+        y: 2
+        z: 2
       }
       hasOrientation: false
       orientation {
@@ -81,10 +81,10 @@ component {
         y: 0
         z: 0
       }
-      hasColor: false
+      hasColor: true
       color {
-        r: 0
-        g: 0
+        r: 9
+        g: 135
         b: 0
       }
     }

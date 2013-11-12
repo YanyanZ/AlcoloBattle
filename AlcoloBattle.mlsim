@@ -19,4 +19,5 @@ update {
 prototypeLibrary: "prototypes/barman.mlent"
 prototypeLibrary: "prototypes/client.mlent"
 prototypeLibrary: "prototypes/securit\351.mlent"
+population: "population/public.mlpop"
 debugger: false
