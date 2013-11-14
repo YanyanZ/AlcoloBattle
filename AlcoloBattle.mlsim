@@ -11,7 +11,7 @@ action {
 decision {
   btFile: "trees/barman.mlbt"
   btFile: "trees/client.mlbt"
-  btFile: "trees/embedded/HelloFrom.mlbt"
+  btFile: "trees/embedded/helloFrom.mlbt"
   btFile: "trees/securit\351.mlbt"
 }
 navigation {

@@ -68,8 +68,8 @@ folder {
   folder {
     name: "embedded"
     file {
-      name: "HelloFrom.mlbt"
-      location: "decision/HelloFrom.mlbt"
+      name: "helloFrom.mlbt"
+      location: "decision/helloFrom.mlbt"
     }
   }
   file {

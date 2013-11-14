@@ -96,7 +96,7 @@ children {
                   type: StringType
                   name: ""
                   kbSelection: plainValue
-                  stringValue: "decision/embedded/HelloFrom.mlbt"
+                  stringValue: "decision/embedded/helloFrom.mlbt"
                 }
                 parameters {
                   type: StringType
