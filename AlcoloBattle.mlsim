@@ -8,6 +8,18 @@ knowledge {
 }
 action {
 }
+decision {
+  btFile: "trees/barman.mlbt"
+  btFile: "trees/client.mlbt"
+  btFile: "trees/embedded/HelloFrom.mlbt"
+  btFile: "trees/securit\351.mlbt"
+}
+navigation {
+  navmeshFile: "navigation/path.mlnv"
+  hasmaximumEntityRadius: false
+  maximumEntityRadius: 1
+  nbFile: "navigation/SimpleNaviBehavior.mlnb"
+}
 sandbox {
   sbxFile: "sandbox/bar.sbx"
 }

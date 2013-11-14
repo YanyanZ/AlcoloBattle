@@ -16,24 +16,13 @@ component {
   }
 }
 component {
-  name: "Knowledge"
-  uuid: "{3e7bc583-e0a7-488c-8433-d832b00d098e}"
-  enable: false
-  content {
-    type: Knowledge
-    [mlv.toolset.simulation.proto.PrototypeKnowledge.extension] {
-      knowledgeFile: ""
-    }
-  }
-}
-component {
   name: "Decision"
   uuid: "{66a3232e-e60c-4f54-bf22-33843a8d6875}"
-  enable: false
+  enable: true
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
-      behavior: ""
+      behavior: "trees/client.mlbt"
     }
   }
 }
@@ -56,7 +45,7 @@ component {
       maxSpeed: 2
       hasPerceptionDistance: false
       perceptionDistance: 10
-      behavior: ""
+      behavior: "navigation/SimpleNaviBehavior.mlnb"
     }
   }
 }
@@ -87,6 +76,17 @@ component {
         g: 54
         b: 255
       }
+    }
+  }
+}
+component {
+  name: "Knowledge"
+  uuid: "{3e7bc583-e0a7-488c-8433-d832b00d098e}"
+  enable: true
+  content {
+    type: Knowledge
+    [mlv.toolset.simulation.proto.PrototypeKnowledge.extension] {
+      knowledgeFile: "knowledge/client.mlkb"
     }
   }
 }

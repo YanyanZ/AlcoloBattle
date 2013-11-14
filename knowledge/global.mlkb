@@ -5,4 +5,135 @@ version {
 }
 root {
   type: Object
+  objectValue {
+    key: "comptoirs"
+    value {
+      type: Array
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+      }
+    }
+  }
+  objectValue {
+    key: "tables"
+    value {
+      type: Array
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 40
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 25
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+      }
+    }
+  }
 }

@@ -8,6 +8,10 @@ builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
 folder {
   name: "knowledge"
   file {
+    name: "client.mlkb"
+    location: "knowledge/client.mlkb"
+  }
+  file {
     name: "global.mlkb"
     location: "knowledge/global.mlkb"
   }
@@ -17,6 +21,10 @@ folder {
   file {
     name: "path.mlnv"
     location: "navigation/path.mlnv"
+  }
+  file {
+    name: "SimpleNaviBehavior.mlnb"
+    location: "navigation/SimpleNaviBehavior.mlnb"
   }
 }
 folder {
@@ -57,6 +65,13 @@ folder {
 }
 folder {
   name: "trees"
+  folder {
+    name: "embedded"
+    file {
+      name: "HelloFrom.mlbt"
+      location: "decision/HelloFrom.mlbt"
+    }
+  }
   file {
     name: "barman.mlbt"
     location: "decision/barman.mlbt"

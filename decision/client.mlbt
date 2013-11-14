@@ -24,28 +24,87 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "1fab876b-c5c7-4b85-843c-8c26e6aa3564"
+      name: "e9214e09-4220-41b3-b304-812e80214509"
       presentation {
-        itemTemplate: "BTActionNode.qml"
+        itemTemplate: "BTSequenceNode.qml"
         position {
-          x: 5159
-          y: 2700
-          z: 0
+          x: 5054.676
+          y: 2520.364
+          z: nan
         }
-        label: "debugOut"
       }
       properties {
         type: BTNodeProperties
         [mlv.toolset.proto.BTNodeProperties.extension] {
-          type: ActionNode
+          type: SequenceNode
           isActivated: true
-          [mlv.toolset.proto.ActionNode.extension] {
-            actionName: "debugOut"
-            parameters {
-              type: StringType
-              name: "text"
-              kbSelection: plainValue
-              stringValue: "Test"
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "e1bf12fb-09af-47b0-8c5f-d256fcdc7c8d"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -94.115999999999985
+              y: 122.76000000000022
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "goto"
+                parameters {
+                  type: StringType
+                  name: "target.x"
+                  kbSelection: SelectGlobalKB
+                  stringValue: "tables[0].x"
+                }
+                parameters {
+                  type: StringType
+                  name: "target.z"
+                  kbSelection: SelectGlobalKB
+                  stringValue: "tables[0].y"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "d25be43b-c2a3-40e7-9f51-e7c240cdf71c"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 99.572000000000116
+              y: 135.03600000000006
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/embedded/HelloFrom.mlbt"
+                }
+                parameters {
+                  type: StringType
+                  name: "location"
+                  kbSelection: plainValue
+                  stringValue: "Premiere table"
+                }
+              }
             }
           }
         }
