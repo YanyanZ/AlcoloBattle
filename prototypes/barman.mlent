@@ -8,7 +8,7 @@ ancestor: ""
 component {
   name: "Action"
   uuid: "{dc6f3a6c-ee36-49c9-a767-0d69d17e27ef}"
-  enable: false
+  enable: true
   content {
     type: Action
     [mlv.toolset.simulation.proto.PrototypeAction.extension] {
@@ -33,7 +33,7 @@ component {
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
-      behavior: ""
+      behavior: "decision/barman.mlbt"
     }
   }
 }

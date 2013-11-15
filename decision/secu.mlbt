@@ -4,12 +4,12 @@ version {
   patch: 0
 }
 type: BehaviorTree
-uuid: "{a7623019-1775-4432-8934-e9347d90190c}"
-name: "client"
+uuid: "{6fe14b36-9723-4b26-a07f-1c89c41e4c16}"
+name: "secu"
 description: ""
 children {
   type: Node
-  name: "dab501bc-6e72-4098-ad57-0d26c21ebba9"
+  name: "5c35215f-7f81-4ef5-b8df-333bbc9028fa"
   presentation {
     itemTemplate: "MLV_USE_NO_TEMPLATE"
     position {
@@ -24,12 +24,12 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "2379992e-383f-4499-ac38-2d00ec7523ff"
+      name: "785f64e8-6a50-40cb-a30c-421e0f9755fc"
       presentation {
         itemTemplate: "BTSequenceNode.qml"
         position {
-          x: 5467
-          y: 2567
+          x: 5408.6999999999989
+          y: 2558.6
           z: 0
         }
       }
@@ -43,12 +43,12 @@ children {
       [mlv.toolset.proto.Node.extension] {
         children {
           type: Node
-          name: "06a8fcf1-299e-4d1d-b438-d866f1a76427"
+          name: "97876e95-3c4b-4db3-b269-cecf797dc777"
           presentation {
             itemTemplate: "BTActionNode.qml"
             position {
-              x: -13.200000000000728
-              y: 129.09999999999945
+              x: 7.8000000000010914
+              y: 120.90000000000009
               z: nan
             }
           }
@@ -63,7 +63,7 @@ children {
                   type: StringType
                   name: "text"
                   kbSelection: plainValue
-                  stringValue: "Test LOL"
+                  stringValue: "LOL"
                 }
               }
             }

@@ -6,6 +6,24 @@ version {
 name: "AlcoloBattle"
 builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
 folder {
+  name: "decision"
+  folder {
+    name: "embedded"
+  }
+  file {
+    name: "barman.mlbt"
+    location: "decision/barman.mlbt"
+  }
+  file {
+    name: "client.mlbt"
+    location: "decision/client.mlbt"
+  }
+  file {
+    name: "secu.mlbt"
+    location: "decision/secu.mlbt"
+  }
+}
+folder {
   name: "knowledge"
   file {
     name: "client.mlkb"
@@ -61,28 +79,6 @@ folder {
   file {
     name: "bar.scene"
     location: "scene/bar.scene"
-  }
-}
-folder {
-  name: "trees"
-  folder {
-    name: "embedded"
-    file {
-      name: "helloFrom.mlbt"
-      location: "decision/helloFrom.mlbt"
-    }
-  }
-  file {
-    name: "barman.mlbt"
-    location: "decision/barman.mlbt"
-  }
-  file {
-    name: "client.mlbt"
-    location: "decision/client.mlbt"
-  }
-  file {
-    name: "securit\351.mlbt"
-    location: "decision/securit\351.mlbt"
   }
 }
 file {

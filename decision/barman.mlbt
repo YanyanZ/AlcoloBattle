@@ -4,12 +4,12 @@ version {
   patch: 0
 }
 type: BehaviorTree
-uuid: "{31a0c5fd-c4ea-4c07-829c-cec36052185d}"
+uuid: "{c088ab83-1a64-402b-8c73-f9ec7f32965e}"
 name: "barman"
 description: ""
 children {
   type: Node
-  name: "bd3cf764-f82d-46aa-b3cb-4e1e215c226f"
+  name: "3c65b8df-350f-4991-a7e3-19bf7e14c627"
   presentation {
     itemTemplate: "MLV_USE_NO_TEMPLATE"
     position {
@@ -24,28 +24,48 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "1d7d37b6-bbcc-4891-a649-233a9f6ad013"
+      name: "a4cce260-269c-44bb-aed3-d4281684fda6"
       presentation {
-        itemTemplate: "BTActionNode.qml"
+        itemTemplate: "BTSequenceNode.qml"
         position {
-          x: 5278
-          y: 2783
+          x: 5422.5
+          y: 2558.7000000000003
           z: 0
         }
-        label: "debugOut"
       }
       properties {
         type: BTNodeProperties
         [mlv.toolset.proto.BTNodeProperties.extension] {
-          type: ActionNode
+          type: SequenceNode
           isActivated: true
-          [mlv.toolset.proto.ActionNode.extension] {
-            actionName: "debugOut"
-            parameters {
-              type: StringType
-              name: "text"
-              kbSelection: plainValue
-              stringValue: "Test"
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "c2e38eb6-1fd6-4be6-b657-a38361da0744"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -6
+              y: 107.79999999999973
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "debugOut"
+                parameters {
+                  type: StringType
+                  name: "text"
+                  kbSelection: plainValue
+                  stringValue: "LOL"
+                }
+              }
             }
           }
         }

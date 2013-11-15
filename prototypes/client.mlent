@@ -8,7 +8,7 @@ ancestor: ""
 component {
   name: "Action"
   uuid: "{dc6f3a6c-ee36-49c9-a767-0d69d17e27ef}"
-  enable: true
+  enable: false
   content {
     type: Action
     [mlv.toolset.simulation.proto.PrototypeAction.extension] {
@@ -22,14 +22,14 @@ component {
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
-      behavior: "trees/client.mlbt"
+      behavior: "decision/client.mlbt"
     }
   }
 }
 component {
   name: "Navigation"
   uuid: "{13b33328-838b-4b6d-b8ef-765aa5c78cab}"
-  enable: true
+  enable: false
   content {
     type: Navigation
     [mlv.toolset.simulation.proto.PrototypeNavigation.extension] {
@@ -82,7 +82,7 @@ component {
 component {
   name: "Knowledge"
   uuid: "{3e7bc583-e0a7-488c-8433-d832b00d098e}"
-  enable: true
+  enable: false
   content {
     type: Knowledge
     [mlv.toolset.simulation.proto.PrototypeKnowledge.extension] {

@@ -9,10 +9,9 @@ knowledge {
 action {
 }
 decision {
-  btFile: "trees/barman.mlbt"
-  btFile: "trees/client.mlbt"
-  btFile: "trees/embedded/helloFrom.mlbt"
-  btFile: "trees/securit\351.mlbt"
+  btFile: "decision/barman.mlbt"
+  btFile: "decision/client.mlbt"
+  btFile: "decision/secu.mlbt"
 }
 navigation {
   navmeshFile: "navigation/path.mlnv"
