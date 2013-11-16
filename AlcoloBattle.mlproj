@@ -15,6 +15,10 @@ folder {
     location: "decision/barman.mlbt"
   }
   file {
+    name: "bt.mlbt"
+    location: "decision/bt.mlbt"
+  }
+  file {
     name: "client.mlbt"
     location: "decision/client.mlbt"
   }
@@ -54,6 +58,10 @@ folder {
 }
 folder {
   name: "prototypes"
+  file {
+    name: "ancestor.mlent"
+    location: "prototypes/ancestor.mlent"
+  }
   file {
     name: "barman.mlent"
     location: "prototypes/barman.mlent"

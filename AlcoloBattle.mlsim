@@ -10,6 +10,7 @@ action {
 }
 decision {
   btFile: "decision/barman.mlbt"
+  btFile: "decision/bt.mlbt"
   btFile: "decision/client.mlbt"
   btFile: "decision/secu.mlbt"
 }
@@ -27,6 +28,7 @@ update {
   numThreads: 1
   useFixedUpdateTimeDelta: false
 }
+prototypeLibrary: "prototypes/ancestor.mlent"
 prototypeLibrary: "prototypes/barman.mlent"
 prototypeLibrary: "prototypes/client.mlent"
 prototypeLibrary: "prototypes/securit\351.mlent"

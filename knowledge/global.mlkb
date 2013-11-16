@@ -15,14 +15,14 @@ root {
           key: "x"
           value {
             type: Int
-            intValue: 0
+            intValue: 40
           }
         }
         objectValue {
           key: "y"
           value {
             type: Int
-            intValue: 0
+            intValue: 40
           }
         }
       }
@@ -32,14 +32,14 @@ root {
           key: "x"
           value {
             type: Int
-            intValue: 0
+            intValue: 11
           }
         }
         objectValue {
           key: "y"
           value {
             type: Int
-            intValue: 0
+            intValue: 40
           }
         }
       }
@@ -72,14 +72,14 @@ root {
           key: "x"
           value {
             type: Int
-            intValue: 0
+            intValue: 30
           }
         }
         objectValue {
           key: "y"
           value {
             type: Int
-            intValue: 0
+            intValue: 30
           }
         }
       }
@@ -89,14 +89,14 @@ root {
           key: "x"
           value {
             type: Int
-            intValue: 0
+            intValue: 30
           }
         }
         objectValue {
           key: "y"
           value {
             type: Int
-            intValue: 0
+            intValue: 20
           }
         }
       }
@@ -106,14 +106,14 @@ root {
           key: "x"
           value {
             type: Int
-            intValue: 0
+            intValue: 20
           }
         }
         objectValue {
           key: "y"
           value {
             type: Int
-            intValue: 0
+            intValue: 18
           }
         }
       }
@@ -123,14 +123,14 @@ root {
           key: "x"
           value {
             type: Int
-            intValue: 0
+            intValue: 18
           }
         }
         objectValue {
           key: "y"
           value {
             type: Int
-            intValue: 0
+            intValue: 30
           }
         }
       }

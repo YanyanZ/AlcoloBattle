@@ -4,12 +4,12 @@ version {
   patch: 0
 }
 type: BehaviorTree
-uuid: "{c088ab83-1a64-402b-8c73-f9ec7f32965e}"
-name: "barman"
+uuid: "{a1096324-1eb3-409e-aabb-64e5fccf4d26}"
+name: "bt"
 description: ""
 children {
   type: Node
-  name: "3c65b8df-350f-4991-a7e3-19bf7e14c627"
+  name: "91fa71cd-09dd-4cd2-8594-64e6b0779af3"
   presentation {
     itemTemplate: "MLV_USE_NO_TEMPLATE"
     position {
@@ -24,12 +24,12 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "5545152d-2e16-4b32-a7b8-55e493cda561"
+      name: "83d9938c-e868-44e7-b45c-b24a301db077"
       presentation {
         itemTemplate: "BTSequenceNode.qml"
         position {
-          x: 5489.2015999999958
-          y: 2528.091199999998
+          x: 5432
+          y: 2565
           z: 0
         }
       }
@@ -43,13 +43,13 @@ children {
       [mlv.toolset.proto.Node.extension] {
         children {
           type: Node
-          name: "4b4bf504-ec7e-4da9-bcbf-2a4649f082f2"
+          name: "4e141934-8b2b-4f61-8300-ef3eab2762a2"
           presentation {
             itemTemplate: "BTActionNode.qml"
             position {
-              x: 7.8000000000010914
-              y: 120.90000000000009
-              z: nan
+              x: -3.5
+              y: 129.5
+              z: 0
             }
           }
           properties {
@@ -63,7 +63,7 @@ children {
                   type: StringType
                   name: "text"
                   kbSelection: plainValue
-                  stringValue: "Barman"
+                  stringValue: "Ancestor"
                 }
               }
             }

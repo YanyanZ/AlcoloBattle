@@ -4,11 +4,11 @@ version {
   patch: 0
 }
 name: "securit\351"
-ancestor: ""
+ancestor: "prototypes/ancestor.mlent"
 component {
   name: "Action"
   uuid: "{dc6f3a6c-ee36-49c9-a767-0d69d17e27ef}"
-  enable: true
+  enable: false
   content {
     type: Action
     [mlv.toolset.simulation.proto.PrototypeAction.extension] {
@@ -29,7 +29,7 @@ component {
 component {
   name: "Decision"
   uuid: "{66a3232e-e60c-4f54-bf22-33843a8d6875}"
-  enable: true
+  enable: false
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
