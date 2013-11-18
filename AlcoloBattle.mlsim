@@ -12,6 +12,7 @@ decision {
   btFile: "decision/barman.mlbt"
   btFile: "decision/bt.mlbt"
   btFile: "decision/client.mlbt"
+  btFile: "decision/embedded/talk.mlbt"
   btFile: "decision/secu.mlbt"
 }
 navigation {
@@ -28,9 +29,16 @@ update {
   numThreads: 1
   useFixedUpdateTimeDelta: false
 }
+implementationLibrary {
+  config {
+    platform: win_vc100_x86
+    pluginFile: "implementation/tutorial_shared_implementation_lib_vc100-mt.dll"
+  }
+  name: "My Config"
+}
 prototypeLibrary: "prototypes/ancestor.mlent"
 prototypeLibrary: "prototypes/barman.mlent"
 prototypeLibrary: "prototypes/client.mlent"
 prototypeLibrary: "prototypes/securit\351.mlent"
-population: "population/public.mlpop"
+population: "population/training.mlpop"
 debugger: false

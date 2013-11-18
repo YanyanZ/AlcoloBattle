@@ -15,14 +15,21 @@ root {
           key: "x"
           value {
             type: Int
-            intValue: 40
+            intValue: 37
           }
         }
         objectValue {
           key: "y"
           value {
             type: Int
-            intValue: 40
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 39
           }
         }
       }
@@ -32,14 +39,21 @@ root {
           key: "x"
           value {
             type: Int
-            intValue: 11
+            intValue: 8
           }
         }
         objectValue {
           key: "y"
           value {
             type: Int
-            intValue: 40
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 39
           }
         }
       }
@@ -62,6 +76,13 @@ root {
           key: "y"
           value {
             type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
             intValue: 25
           }
         }
@@ -79,6 +100,13 @@ root {
           key: "y"
           value {
             type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
             intValue: 30
           }
         }
@@ -94,6 +122,13 @@ root {
         }
         objectValue {
           key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
           value {
             type: Int
             intValue: 20
@@ -113,6 +148,13 @@ root {
           key: "y"
           value {
             type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
             intValue: 18
           }
         }
@@ -128,6 +170,13 @@ root {
         }
         objectValue {
           key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
           value {
             type: Int
             intValue: 30

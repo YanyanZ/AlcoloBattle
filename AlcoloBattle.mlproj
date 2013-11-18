@@ -9,6 +9,10 @@ folder {
   name: "decision"
   folder {
     name: "embedded"
+    file {
+      name: "talk.mlbt"
+      location: "decision/talk.mlbt"
+    }
   }
   file {
     name: "barman.mlbt"
@@ -28,10 +32,25 @@ folder {
   }
 }
 folder {
+  name: "implementation"
+  file {
+    name: "tutorial_shared_implementation_lib_vc100-mt-gd.dll"
+    location: "implementation/tutorial_shared_implementation_lib_vc100-mt-gd.dll"
+  }
+  file {
+    name: "tutorial_shared_implementation_lib_vc100-mt.dll"
+    location: "implementation/tutorial_shared_implementation_lib_vc100-mt.dll"
+  }
+}
+folder {
   name: "knowledge"
   file {
     name: "client.mlkb"
     location: "knowledge/client.mlkb"
+  }
+  file {
+    name: "common.mlkb"
+    location: "knowledge/common.mlkb"
   }
   file {
     name: "global.mlkb"
@@ -54,6 +73,10 @@ folder {
   file {
     name: "public.mlpop"
     location: "simulation/public.mlpop"
+  }
+  file {
+    name: "training.mlpop"
+    location: "simulation/training.mlpop"
   }
 }
 folder {

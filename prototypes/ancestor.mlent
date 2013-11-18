@@ -18,11 +18,11 @@ component {
 component {
   name: "Knowledge"
   uuid: "{3e7bc583-e0a7-488c-8433-d832b00d098e}"
-  enable: false
+  enable: true
   content {
     type: Knowledge
     [mlv.toolset.simulation.proto.PrototypeKnowledge.extension] {
-      knowledgeFile: "knowledge/global.mlkb"
+      knowledgeFile: "knowledge/common.mlkb"
     }
   }
 }
