@@ -713,6 +713,7 @@ children {
                   y: 269.02543001686308
                   z: nan
                 }
+                label: "setEntityKnowledgeProperty"
               }
               properties {
                 type: BTNodeProperties
@@ -720,19 +721,7 @@ children {
                   type: ActionNode
                   isActivated: false
                   [mlv.toolset.proto.ActionNode.extension] {
-                    actionName: "setEntityKnowledgeProperty"
-                    parameters {
-                      type: StringType
-                      name: "key"
-                      kbSelection: selectLocalKB
-                      stringValue: "drunk"
-                    }
-                    parameters {
-                      type: BoolType
-                      name: "value"
-                      kbSelection: plainValue
-                      boolValue: true
-                    }
+                    actionName: "debugOut"
                   }
                 }
               }
