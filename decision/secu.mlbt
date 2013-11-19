@@ -24,12 +24,12 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "785f64e8-6a50-40cb-a30c-421e0f9755fc"
+      name: "2b88312e-038c-42f3-b506-aa7b7834ad23"
       presentation {
         itemTemplate: "BTSequenceNode.qml"
         position {
-          x: 5408.6999999999989
-          y: 2558.6
+          x: 5399.8999999999987
+          y: 2543.2
           z: 0
         }
       }
@@ -43,27 +43,552 @@ children {
       [mlv.toolset.proto.Node.extension] {
         children {
           type: Node
-          name: "97876e95-3c4b-4db3-b269-cecf797dc777"
+          name: "aa2fb60f-5ce4-4c59-a91f-6c3f23a0febf"
           presentation {
-            itemTemplate: "BTActionNode.qml"
+            itemTemplate: "BTParallelNode.qml"
             position {
-              x: 7.8000000000010914
-              y: 120.90000000000009
+              x: -645.22000000000844
+              y: 212.73999999999478
               z: nan
             }
           }
           properties {
             type: BTNodeProperties
             [mlv.toolset.proto.BTNodeProperties.extension] {
-              type: ActionNode
+              type: ParallelNode
               isActivated: true
-              [mlv.toolset.proto.ActionNode.extension] {
-                actionName: "debugOut"
-                parameters {
-                  type: StringType
-                  name: "text"
-                  kbSelection: plainValue
-                  stringValue: "S\351curit\351"
+              [mlv.toolset.proto.ParallelNode.extension] {
+                statusCondition: StopAtFirstSuccess
+                retryTag: retryRunning
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "61dc6478-feec-47ca-9577-971d8aa859ce"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -67.119999999988977
+                  y: 123.64000000000533
+                  z: nan
+                }
+                label: "W1"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: IntType
+                      name: "target.x"
+                      kbSelection: plainValue
+                      intValue: 47
+                    }
+                    parameters {
+                      type: IntType
+                      name: "target.z"
+                      kbSelection: plainValue
+                      intValue: 36
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "5a1a780f-3539-4150-af9f-7cfd6b41516d"
+              presentation {
+                itemTemplate: "BTParallelNode.qml"
+                position {
+                  x: 68.619999999999891
+                  y: 121.17999999999984
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ParallelNode
+                  isActivated: true
+                  [mlv.toolset.proto.ParallelNode.extension] {
+                    statusCondition: StopAtFirstSuccess
+                    retryTag: retryRunning
+                  }
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "3a6047aa-8228-438b-92c8-e590a60e9320"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 89.059999999999491
+                      y: 162.05999999999949
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "debugOut"
+                        parameters {
+                          type: StringType
+                          name: "text"
+                          kbSelection: plainValue
+                          stringValue: "DETECT"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "3af3852e-8f88-4766-a110-fc10857a19f3"
+          presentation {
+            itemTemplate: "BTParallelNode.qml"
+            position {
+              x: -320.78000000000884
+              y: 205.41999999999462
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ParallelNode
+              isActivated: true
+              [mlv.toolset.proto.ParallelNode.extension] {
+                statusCondition: StopAtFirstSuccess
+                retryTag: retryRunning
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "6e0a669c-e3e3-4063-87a4-e16279ff9941"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -48.980000000000473
+                  y: 140.61999999999944
+                  z: nan
+                }
+                label: "W2"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: IntType
+                      name: "target.x"
+                      kbSelection: plainValue
+                      intValue: -25
+                    }
+                    parameters {
+                      type: IntType
+                      name: "target.z"
+                      kbSelection: plainValue
+                      intValue: 47
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "b79ce128-0c4b-4129-a21f-c7277f459138"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 39.5
+                  y: 139.03999999999951
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "debugOut"
+                    parameters {
+                      type: StringType
+                      name: "text"
+                      kbSelection: plainValue
+                      stringValue: "DETECT"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "af27ee8b-28bf-4460-b73f-ed3daaa6f24f"
+          presentation {
+            itemTemplate: "BTParallelNode.qml"
+            position {
+              x: -139.08000000000993
+              y: 208.57999999999447
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ParallelNode
+              isActivated: true
+              [mlv.toolset.proto.ParallelNode.extension] {
+                statusCondition: StopAtFirstSuccess
+                retryTag: retryRunning
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "43cfed80-3424-4752-8c5b-521bcefd22fe"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -58.460000000000036
+                  y: 139.03999999999951
+                  z: nan
+                }
+                label: "W3"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: IntType
+                      name: "target.x"
+                      kbSelection: plainValue
+                      intValue: -19
+                    }
+                    parameters {
+                      type: IntType
+                      name: "target.z"
+                      kbSelection: plainValue
+                      intValue: -26
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "ca201095-0f4b-4b6a-ac5e-2b3a016392d3"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 26.860000000000582
+                  y: 137.45999999999958
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "debugOut"
+                    parameters {
+                      type: StringType
+                      name: "text"
+                      kbSelection: plainValue
+                      stringValue: "DETECT"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "e609dcc3-2f9d-40c4-a372-3133f0c44b41"
+          presentation {
+            itemTemplate: "BTParallelNode.qml"
+            position {
+              x: 26.819999999989705
+              y: 216.47999999999456
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ParallelNode
+              isActivated: true
+              [mlv.toolset.proto.ParallelNode.extension] {
+                statusCondition: StopAtFirstSuccess
+                retryTag: retryRunning
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "9e1416c2-fa9d-4d6b-825f-17695829ffd0"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -47.399999999999636
+                  y: 129.55999999999949
+                  z: nan
+                }
+                label: "W4"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: IntType
+                      name: "target.x"
+                      kbSelection: plainValue
+                      intValue: -4
+                    }
+                    parameters {
+                      type: IntType
+                      name: "target.z"
+                      kbSelection: plainValue
+                      intValue: -39
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "13dab386-3cf7-4294-a3a3-9875a5b626a1"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 42.659999999999854
+                  y: 129.55999999999949
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "debugOut"
+                    parameters {
+                      type: StringType
+                      name: "text"
+                      kbSelection: plainValue
+                      stringValue: "DETECT"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "92f0c765-de90-4b0f-ba56-d6c9eb52330e"
+          presentation {
+            itemTemplate: "BTParallelNode.qml"
+            position {
+              x: 197.45999999999003
+              y: 214.89999999999418
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ParallelNode
+              isActivated: true
+              [mlv.toolset.proto.ParallelNode.extension] {
+                statusCondition: StopAtFirstSuccess
+                retryTag: retryRunning
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "8094d39e-cc3a-4f81-86cf-9b9e09b0ea05"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -39.5
+                  y: 132.7199999999998
+                  z: nan
+                }
+                label: "W5"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: IntType
+                      name: "target.x"
+                      kbSelection: plainValue
+                      intValue: 15
+                    }
+                    parameters {
+                      type: IntType
+                      name: "target.z"
+                      kbSelection: plainValue
+                      intValue: -45
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "c20583c7-1d7c-4dc7-add6-dfe32b4e8442"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 53.719999999999345
+                  y: 132.7199999999998
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "debugOut"
+                    parameters {
+                      type: StringType
+                      name: "text"
+                      kbSelection: plainValue
+                      stringValue: "DETECT"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "5f6938e9-e9bd-4749-97c2-2dcfd85e9142"
+          presentation {
+            itemTemplate: "BTParallelNode.qml"
+            position {
+              x: 379.15999999998985
+              y: 214.89999999999418
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ParallelNode
+              isActivated: true
+              [mlv.toolset.proto.ParallelNode.extension] {
+                statusCondition: StopAtFirstSuccess
+                retryTag: retryRunning
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "0a480718-45bb-45c3-a308-009d6b6ce883"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -39.5
+                  y: 132.7199999999998
+                  z: nan
+                }
+                label: "W6"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: IntType
+                      name: "target.x"
+                      kbSelection: plainValue
+                      intValue: 23
+                    }
+                    parameters {
+                      type: IntType
+                      name: "target.z"
+                      kbSelection: plainValue
+                      intValue: -40
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "121da241-d46c-488e-8714-eeb055835d4d"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 42.659999999999854
+                  y: 132.7199999999998
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "debugOut"
+                    parameters {
+                      type: StringType
+                      name: "text"
+                      kbSelection: plainValue
+                      stringValue: "DETECT"
+                    }
+                  }
                 }
               }
             }

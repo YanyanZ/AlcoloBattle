@@ -56,6 +56,10 @@ folder {
     name: "global.mlkb"
     location: "knowledge/global.mlkb"
   }
+  file {
+    name: "secu.mlkb"
+    location: "knowledge/secu.mlkb"
+  }
 }
 folder {
   name: "navigation"
