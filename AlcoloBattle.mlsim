@@ -29,13 +29,6 @@ update {
   numThreads: 1
   useFixedUpdateTimeDelta: false
 }
-implementationLibrary {
-  config {
-    platform: win_vc100_x86
-    pluginFile: "implementation/tutorial_shared_implementation_lib_vc100-mt.dll"
-  }
-  name: "My Config"
-}
 prototypeLibrary: "prototypes/ancestor.mlent"
 prototypeLibrary: "prototypes/barman.mlent"
 prototypeLibrary: "prototypes/client.mlent"
