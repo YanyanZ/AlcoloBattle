@@ -10,6 +10,10 @@ folder {
   folder {
     name: "embedded"
     file {
+      name: "buy_drink.mlbt"
+      location: "decision/buy_drink.mlbt"
+    }
+    file {
       name: "talk.mlbt"
       location: "decision/talk.mlbt"
     }
@@ -34,16 +38,32 @@ folder {
 folder {
   name: "implementation"
   file {
-    name: "tutorial_shared_implementation_lib_vc100-mt-gd.dll"
-    location: "implementation/tutorial_shared_implementation_lib_vc100-mt-gd.dll"
+    name: "alcolo_battle_lib_vc100-mt-gd.dll"
+    location: "implementation/alcolo_battle_lib_vc100-mt-gd.dll"
   }
   file {
-    name: "tutorial_shared_implementation_lib_vc100-mt.dll"
-    location: "implementation/tutorial_shared_implementation_lib_vc100-mt.dll"
+    name: "alcolo_battle_lib_vc100-mt.dll"
+    location: "implementation/alcolo_battle_lib_vc100-mt.dll"
   }
 }
 folder {
   name: "knowledge"
+  file {
+    name: "barman1.mlkb"
+    location: "knowledge/barman1.mlkb"
+  }
+  file {
+    name: "barman2.mlkb"
+    location: "knowledge/barman2.mlkb"
+  }
+  file {
+    name: "barman3.mlkb"
+    location: "knowledge/barman3.mlkb"
+  }
+  file {
+    name: "barman4.mlkb"
+    location: "knowledge/barman4.mlkb"
+  }
   file {
     name: "client.mlkb"
     location: "knowledge/client.mlkb"
@@ -86,8 +106,20 @@ folder {
     location: "prototypes/ancestor.mlent"
   }
   file {
-    name: "barman.mlent"
-    location: "prototypes/barman.mlent"
+    name: "barman1.mlent"
+    location: "prototypes/barman1.mlent"
+  }
+  file {
+    name: "barman2.mlent"
+    location: "prototypes/barman2.mlent"
+  }
+  file {
+    name: "barman3.mlent"
+    location: "prototypes/barman3.mlent"
+  }
+  file {
+    name: "barman4.mlent"
+    location: "prototypes/barman4.mlent"
   }
   file {
     name: "client.mlent"
