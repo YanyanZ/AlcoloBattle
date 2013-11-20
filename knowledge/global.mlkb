@@ -22,8 +22,27 @@ root {
         boolValue: false
       }
       arrayValue {
-        type: Bool
-        boolValue: true
+      	type: Bool
+	boolValue: false
+      }
+    }
+  }
+  type: Object
+  objectValue {
+    key: "battles"
+    value {
+      type: Array
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
       }
     }
   }

@@ -18,6 +18,9 @@ folder {
       location: "decision/talk.mlbt"
     }
   }
+  folder {
+    name: "secu"
+  }
   file {
     name: "barman.mlbt"
     location: "decision/barman.mlbt"
@@ -75,6 +78,10 @@ folder {
   file {
     name: "global.mlkb"
     location: "knowledge/global.mlkb"
+  }
+  file {
+    name: "secu.mlkb"
+    location: "knowledge/secu.mlkb"
   }
 }
 folder {

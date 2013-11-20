@@ -9,6 +9,8 @@ knowledge {
   knowledgeFile: "knowledge/barman2.mlkb"
   knowledgeFile: "knowledge/barman3.mlkb"
   knowledgeFile: "knowledge/barman4.mlkb"
+  knowledgeFile: "knowledge/secu.mlkb"
+  knowledgeFile: "knowledge/client.mlkb"
 }
 action {
 }
