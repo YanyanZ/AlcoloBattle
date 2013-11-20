@@ -15,6 +15,8 @@ set(LIBRARY_SOURCES
 set(ACTION_SOURCES
 	setEntityBooleanAction.h
 	setEntityBooleanAction.cpp
+	incrementAction.h
+	incrementAction.cpp
 )
 
 set(SOURCES ${LIBRARY_SOURCES} ${ACTION_SOURCES} CMakeLists.txt)

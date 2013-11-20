@@ -52,7 +52,7 @@ namespace alcolo
 			}
 			else
 			{
-				//MLV_LOG_ERROR(logger, mlv::utils::error::invalidConfiguration, "Unable to put the set value to 'entityKnowledge:" << nodeParameters.key << "'.");
+				//MLV_LOG_ERROR(logger, mlv::utils::error::invalidConfiguration, "Unable to put the set value to 'entityKnowledge:" << params.key << "'.");
 				return mlv::behavior::action::canceled;
 			}
 			

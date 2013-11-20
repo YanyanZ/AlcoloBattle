@@ -43,17 +43,6 @@ folder {
   }
 }
 folder {
-  name: "implementation"
-  file {
-    name: "AlcoloBattle_vc100-mt-gd.dll"
-    location: "implementation/AlcoloBattle_vc100-mt-gd.dll"
-  }
-  file {
-    name: "AlcoloBattle_vc100-mt.dll"
-    location: "implementation/AlcoloBattle_vc100-mt.dll"
-  }
-}
-folder {
   name: "knowledge"
   file {
     name: "barman1.mlkb"

@@ -5,6 +5,7 @@ namespace alcolo
 	ImplementationLibrary::ImplementationLibrary()
 		: AbstractImplementationLibrary("alcolo")
 		, setEntityBoolean_()
+		, increment_ ()
 	{
 		// NOTHING
 	}
@@ -21,7 +22,9 @@ namespace alcolo
 		
 		//Actions
 		success = success && registerType<SetEntityBooleanParams>(logger);
-		success = success && registerAction(setEntityBoolean_, logger);		
+		success = success && registerAction(setEntityBoolean_, logger);
+		success = success && registerType<IncrementParams>(logger);
+		success = success && registerAction(increment_, logger);			
 		
 		return success;
 	}
@@ -34,6 +37,10 @@ namespace alcolo
 		success = success && unregisterAction(setEntityBoolean_, logger);
 		if (success)
 			unregisterType<SetEntityBooleanParams>();
+			
+		success = success && unregisterAction(increment_, logger);
+		if (success)
+			unregisterType<IncrementParams>();
 			
 		return success;
 	}

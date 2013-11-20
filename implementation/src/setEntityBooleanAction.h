@@ -9,7 +9,7 @@ namespace alcolo
 	
         class SetEntityBooleanParams : public mlv::utils::StaticObject
         {
-            MLV_DEFINE_STATIC_OBJECT(alcolo::SetEntityBooleanParams,"1e74c1ca-c3cc-4739-8dcc-49744428864e",setMetadata);
+            MLV_DEFINE_STATIC_OBJECT(alcolo::SetEntityBooleanParams,"setEntityBooleanAction",setMetadata);
         public:
             SetEntityBooleanParams();
 			mlv::utils::String key;
@@ -28,9 +28,17 @@ namespace alcolo
             ~SetEntityBoolean();
 
         private:
-            virtual mlv::behavior::action::Status doStart(mlv::behavior::EntityKnowledgeFacade& entity, mlv::behavior::ActionRequestHandle requestId, const SetEntityBooleanParams& params);
-            virtual mlv::behavior::action::Status doUpdate(mlv::behavior::EntityKnowledgeFacade& entity, mlv::behavior::ActionRequestHandle requestId, const SetEntityBooleanParams& params, const mlv::utils::Time& dt);
-            virtual mlv::behavior::action::Status doCancel(mlv::behavior::EntityKnowledgeFacade& entity, mlv::behavior::ActionRequestHandle requestId, const SetEntityBooleanParams& params, const mlv::utils::Time& dt);
+            virtual mlv::behavior::action::Status doStart(mlv::behavior::EntityKnowledgeFacade& entity,
+															mlv::behavior::ActionRequestHandle requestId,
+															const SetEntityBooleanParams& params);
+            virtual mlv::behavior::action::Status doUpdate(mlv::behavior::EntityKnowledgeFacade& entity,
+															mlv::behavior::ActionRequestHandle requestId,
+															const SetEntityBooleanParams& params,
+															const mlv::utils::Time& dt);
+            virtual mlv::behavior::action::Status doCancel(mlv::behavior::EntityKnowledgeFacade& entity,
+															mlv::behavior::ActionRequestHandle requestId,
+															const SetEntityBooleanParams& params,
+															const mlv::utils::Time& dt);
     
 			};
 }

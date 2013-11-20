@@ -38,7 +38,7 @@ update {
 }
 implementationLibrary {
   config {
-    platform: win_vc100_x86_d
+    platform: win_vc100_x86
     pluginFile: "implementation/AlcoloBattle_vc100-mt-gd.dll"
   }
   config {
