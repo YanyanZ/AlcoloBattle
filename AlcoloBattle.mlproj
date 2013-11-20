@@ -34,12 +34,20 @@ folder {
 folder {
   name: "implementation"
   file {
-    name: "tutorial_shared_implementation_lib_vc100-mt-gd.dll"
-    location: "implementation/tutorial_shared_implementation_lib_vc100-mt-gd.dll"
+    name: "AlcoloBattle_vc100-mt-gd.dll"
+    location: "implementation/AlcoloBattle_vc100-mt-gd.dll"
   }
   file {
-    name: "tutorial_shared_implementation_lib_vc100-mt.dll"
-    location: "implementation/tutorial_shared_implementation_lib_vc100-mt.dll"
+    name: "AlcoloBattle_vc100-mt.dll"
+    location: "implementation/AlcoloBattle_vc100-mt.dll"
+  }
+  file {
+    name: "bootcamp_implementation_lib_vc100-mt-gd.dll"
+    location: "implementation/bootcamp_implementation_lib_vc100-mt-gd.dll"
+  }
+  file {
+    name: "bootcamp_implementation_lib_vc100-mt.dll"
+    location: "implementation/bootcamp_implementation_lib_vc100-mt.dll"
   }
 }
 folder {
