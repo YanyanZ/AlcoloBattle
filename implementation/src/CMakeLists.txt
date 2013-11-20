@@ -15,6 +15,8 @@ set(LIBRARY_SOURCES
 set(ACTION_SOURCES
 	setSecuEngate.h
 	setSecuEngate.cpp
+	Component.cpp
+	Component.h
 )
 
 set(SOURCES ${LIBRARY_SOURCES} ${ACTION_SOURCES} CMakeLists.txt)

@@ -20,6 +20,13 @@ root {
     }
   }
   objectValue {
+    key: "command"
+    value {
+      type: Bool
+      boolValue: true
+    }
+  }
+  objectValue {
     key: "detectPeople"
     value {
       type: Bool

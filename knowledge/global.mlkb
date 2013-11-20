@@ -28,6 +28,13 @@ root {
     }
   }
   objectValue {
+    key: "command"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
     key: "commands"
     value {
       type: Array
