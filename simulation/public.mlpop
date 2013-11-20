@@ -184,7 +184,7 @@ entity {
   useOrientation: true
 }
 entity {
-  prototype: "prototypes/barman.mlent"
+  prototype: "prototypes/barman4.mlent"
   id: "{091d71b4-b547-4705-a709-35f8d981acf7}"
   name: "Barman 1 - BB"
   position {
@@ -202,7 +202,7 @@ entity {
   useOrientation: true
 }
 entity {
-  prototype: "prototypes/barman.mlent"
+  prototype: "prototypes/barman3.mlent"
   id: "{f35d6b4d-95aa-44e8-b104-bfdecfffab5a}"
   name: "Barman 2 - BB"
   position {
@@ -220,7 +220,7 @@ entity {
   useOrientation: true
 }
 entity {
-  prototype: "prototypes/barman.mlent"
+  prototype: "prototypes/barman2.mlent"
   id: "{c85cea33-3688-4356-b604-581578b7f602}"
   name: "Barman 3 - BG"
   position {
@@ -238,7 +238,7 @@ entity {
   useOrientation: true
 }
 entity {
-  prototype: "prototypes/barman.mlent"
+  prototype: "prototypes/barman1.mlent"
   id: "{cd176178-4f7a-47b0-93f5-a612a15a6141}"
   name: "Barman 4 - BG"
   position {

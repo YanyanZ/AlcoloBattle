@@ -20,6 +20,34 @@ root {
     }
   }
   objectValue {
+    key: "command1"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command2"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command3"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command4"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
     key: "detectPeople"
     value {
       type: Bool

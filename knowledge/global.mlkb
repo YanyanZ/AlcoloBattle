@@ -6,33 +6,59 @@ version {
 root {
   type: Object
   objectValue {
-    key: "comptoirs"
+    key: "battles"
     value {
       type: Array
       arrayValue {
-        type: Object
-        objectValue {
-          key: "x"
-          value {
-            type: Int
-            intValue: 37
-          }
-        }
-        objectValue {
-          key: "y"
-          value {
-            type: Int
-            intValue: 0
-          }
-        }
-        objectValue {
-          key: "z"
-          value {
-            type: Int
-            intValue: 39
-          }
-        }
+        type: Int
+        intValue: 0
       }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Bool
+        boolValue: false
+      }
+    }
+  }
+  objectValue {
+    key: "command1"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command2"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command3"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command4"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "comptoirs"
+    value {
+      type: Array
       arrayValue {
         type: Object
         objectValue {
@@ -53,7 +79,79 @@ root {
           key: "z"
           value {
             type: Int
-            intValue: 39
+            intValue: 38
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 15
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 38
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 37
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 38
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 43
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 38
           }
         }
       }

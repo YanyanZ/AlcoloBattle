@@ -3,7 +3,7 @@ version {
   minor: 4
   patch: 0
 }
-name: "securit\351"
+name: "barman3"
 ancestor: "prototypes/ancestor.mlent"
 component {
   name: "Action"
@@ -22,9 +22,7 @@ component {
   content {
     type: Knowledge
     [mlv.toolset.simulation.proto.PrototypeKnowledge.extension] {
-      knowledgeFile: "knowledge/secu.mlkb"
-      subscription: "kng1"
-      subscription: ""
+      knowledgeFile: "knowledge/barman3.mlkb"
     }
   }
 }
@@ -35,14 +33,14 @@ component {
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
-      behavior: "decision/secu.mlbt"
+      behavior: "decision/barman.mlbt"
     }
   }
 }
 component {
   name: "Navigation"
   uuid: "{13b33328-838b-4b6d-b8ef-765aa5c78cab}"
-  enable: true
+  enable: false
   content {
     type: Navigation
     [mlv.toolset.simulation.proto.PrototypeNavigation.extension] {
@@ -58,7 +56,7 @@ component {
       maxSpeed: 2
       hasPerceptionDistance: false
       perceptionDistance: 10
-      behavior: "navigation/SimpleNaviBehavior.mlnb"
+      behavior: ""
     }
   }
 }
@@ -69,11 +67,11 @@ component {
   content {
     type: Sandbox
     [mlv.toolset.simulation.proto.PrototypeSandbox.extension] {
-      mesh: "DummyPuppet.mesh"
+      mesh: "Puppet.mesh"
       hasScale: true
       scale {
         x: 2
-        y: 1
+        y: 2
         z: 2
       }
       hasOrientation: false
@@ -85,9 +83,9 @@ component {
       }
       hasColor: true
       color {
-        r: 255
-        g: 0
-        b: 4
+        r: 0
+        g: 170
+        b: 0
       }
     }
   }

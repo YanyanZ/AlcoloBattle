@@ -684,35 +684,14 @@ children {
         }
         children {
           type: Node
-          name: "84c79053-5cc2-4f09-ad1f-78af430200d5"
+          name: "b8b610ec-e975-4e36-adee-16d3b24961f1"
           presentation {
-            itemTemplate: "BTSequenceNode.qml"
+            itemTemplate: "BTEmbeddedNode.qml"
             position {
-              x: 581.17504215850931
-              y: 182.32259696458368
-              z: 0
+              x: 772.90641899078582
+              y: 279.53488221558973
+              z: nan
             }
-            label: "Drink"
-          }
-          properties {
-            type: BTNodeProperties
-            [mlv.toolset.proto.BTNodeProperties.extension] {
-              type: SequenceNode
-              isActivated: false
-            }
-          }
-        }
-        children {
-          type: Node
-          name: "1bf85fb9-5712-45be-b216-c33f45fad713"
-          presentation {
-            itemTemplate: "BTSequenceNode.qml"
-            position {
-              x: 688.9038785834673
-              y: 186.36242833051983
-              z: 0
-            }
-            label: "Buy a drink"
           }
           properties {
             type: BTNodeProperties
