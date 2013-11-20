@@ -6,6 +6,28 @@ version {
 root {
   type: Object
   objectValue {
+    key: "battles"
+    value {
+      type: Array
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Bool
+        boolValue: false
+      }
+    }
+  }
+  objectValue {
     key: "commands"
     value {
       type: Array
@@ -22,27 +44,8 @@ root {
         boolValue: false
       }
       arrayValue {
-      	type: Bool
-	boolValue: false
-      }
-    }
-  }
-  type: Object
-  objectValue {
-    key: "battles"
-    value {
-      type: Array
-      arrayValue {
-        type: Int
-        intValue: 0
-      }
-      arrayValue {
-        type: Int
-        intValue: 0
-      }
-      arrayValue {
-        type: Int
-        intValue: 0
+        type: Bool
+        boolValue: false
       }
     }
   }

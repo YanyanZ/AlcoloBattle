@@ -39,11 +39,11 @@ update {
 implementationLibrary {
   config {
     platform: win_vc100_x86_d
-    pluginFile: "implementation/alcolo_battle_vc100-mt-gd.dll"
+    pluginFile: "implementation/AlcoloBattle_vc100-mt-gd.dll"
   }
   config {
     platform: win_vc100_x86
-    pluginFile: "implementation/alcolo_battle_lib_vc100-mt.dll"
+    pluginFile: "implementation/AlcoloBattle_vc100-mt.dll"
   }
   name: "My Config"
 }

@@ -41,12 +41,12 @@ folder {
 folder {
   name: "implementation"
   file {
-    name: "alcolo_battle_lib_vc100-mt-gd.dll"
-    location: "implementation/alcolo_battle_lib_vc100-mt-gd.dll"
+    name: "AlcoloBattle_vc100-mt-gd.dll"
+    location: "implementation/AlcoloBattle_vc100-mt-gd.dll"
   }
   file {
-    name: "alcolo_battle_lib_vc100-mt.dll"
-    location: "implementation/alcolo_battle_lib_vc100-mt.dll"
+    name: "AlcoloBattle_vc100-mt.dll"
+    location: "implementation/AlcoloBattle_vc100-mt.dll"
   }
 }
 folder {
