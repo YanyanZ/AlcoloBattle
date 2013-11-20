@@ -13,8 +13,8 @@ set(LIBRARY_SOURCES
 	ImplementationLibrary.cpp
 )
 set(ACTION_SOURCES
-	setSecuEngate.h
-	setSecuEngate.cpp
+	setEntityBooleanAction.h
+	setEntityBooleanAction.cpp
 )
 
 set(SOURCES ${LIBRARY_SOURCES} ${ACTION_SOURCES} CMakeLists.txt)
