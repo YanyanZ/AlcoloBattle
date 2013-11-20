@@ -23,7 +23,7 @@ root {
       }
       arrayValue {
         type: Bool
-        boolValue: false
+        boolValue: true
       }
     }
   }

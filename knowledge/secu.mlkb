@@ -13,7 +13,7 @@ root {
     }
   }
   objectValue {
-    key: "inMove"
+    key: "inPosition"
     value {
       type: Bool
       boolValue: false
