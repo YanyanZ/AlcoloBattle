@@ -94,19 +94,29 @@ namespace templates
         {
             mlv::utils::DynamicObject& globalKnowledge = knowledge_->getFramework().getGlobalWorkingKnowledge();
 
-			bool command = false;
+			bool command1 = false;
+			bool command2 = false;
+			bool command3 = false;
+			bool command4 = false;
 
 			for (std::size_t i = 0; i < simulation_->countEntities() ; ++i)
 			{
 				const mlv::utils::DynamicObject& entityKnowledge = knowledge_->getFramework().getEntityKnowledge(simulation_->getEntities()[i]);
 
-				if (entityKnowledge.hasProperty ("command"))
-				{
-					command |= entityKnowledge.getBool ("command");
-				}
+				if (entityKnowledge.hasProperty ("command1"))
+					command1 |= entityKnowledge.getBool ("command1");
+				if (entityKnowledge.hasProperty ("command2"))
+					command2 |= entityKnowledge.getBool ("command2");
+				if (entityKnowledge.hasProperty ("command3"))
+					command3 |= entityKnowledge.getBool ("command3");
+				if (entityKnowledge.hasProperty ("command4"))
+					command4 |= entityKnowledge.getBool ("command4");
 			}
 
-			globalKnowledge.setBool("command", command);
+			globalKnowledge.setBool("command1", command1);
+			globalKnowledge.setBool("command2", command2);
+			globalKnowledge.setBool("command3", command3);
+			globalKnowledge.setBool("command4", command4);
 
             return true;
         }
