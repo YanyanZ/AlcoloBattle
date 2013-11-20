@@ -1796,7 +1796,19 @@ children {
               type: ActionNode
               isActivated: true
               [mlv.toolset.proto.ActionNode.extension] {
-                actionName: "setSecuEngage"
+                actionName: "SetEntityBoolean"
+                parameters {
+                  type: StringType
+                  name: "key"
+                  kbSelection: plainValue
+                  stringValue: "lol"
+                }
+                parameters {
+                  type: BoolType
+                  name: "value"
+                  kbSelection: plainValue
+                  boolValue: true
+                }
               }
             }
           }
@@ -1821,7 +1833,7 @@ children {
                 operator: Equal
                 leftOperand {
                   source: selectLocalKB
-                  key: "Engage"
+                  key: "lol"
                 }
                 rightOperand {
                   source: plainValue
