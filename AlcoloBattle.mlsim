@@ -5,6 +5,10 @@ version {
 }
 knowledge {
   knowledgeFile: "knowledge/global.mlkb"
+  knowledgeFile: "knowledge/barman1.mlkb"
+  knowledgeFile: "knowledge/barman2.mlkb"
+  knowledgeFile: "knowledge/barman3.mlkb"
+  knowledgeFile: "knowledge/barman4.mlkb"
   knowledgeFile: "knowledge/secu.mlkb"
   knowledgeFile: "knowledge/client.mlkb"
 }
@@ -14,6 +18,7 @@ decision {
   btFile: "decision/barman.mlbt"
   btFile: "decision/bt.mlbt"
   btFile: "decision/client.mlbt"
+  btFile: "decision/embedded/buy_drink.mlbt"
   btFile: "decision/embedded/talk.mlbt"
   btFile: "decision/secu.mlbt"
 }
@@ -40,10 +45,13 @@ implementationLibrary {
     platform: win_vc100_x86
     pluginFile: "implementation/AlcoloBattle_vc100-mt.dll"
   }
-  name: "Test"
+  name: "My Config"
 }
 prototypeLibrary: "prototypes/ancestor.mlent"
-prototypeLibrary: "prototypes/barman.mlent"
+prototypeLibrary: "prototypes/barman1.mlent"
+prototypeLibrary: "prototypes/barman2.mlent"
+prototypeLibrary: "prototypes/barman3.mlent"
+prototypeLibrary: "prototypes/barman4.mlent"
 prototypeLibrary: "prototypes/client.mlent"
 prototypeLibrary: "prototypes/securit\351.mlent"
 population: "population/public.mlpop"

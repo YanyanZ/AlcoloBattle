@@ -3,7 +3,7 @@ version {
   minor: 4
   patch: 0
 }
-name: "barman"
+name: "barman4"
 ancestor: "prototypes/ancestor.mlent"
 component {
   name: "Action"
@@ -18,18 +18,18 @@ component {
 component {
   name: "Knowledge"
   uuid: "{3e7bc583-e0a7-488c-8433-d832b00d098e}"
-  enable: false
+  enable: true
   content {
     type: Knowledge
     [mlv.toolset.simulation.proto.PrototypeKnowledge.extension] {
-      knowledgeFile: ""
+      knowledgeFile: "knowledge/barman4.mlkb"
     }
   }
 }
 component {
   name: "Decision"
   uuid: "{66a3232e-e60c-4f54-bf22-33843a8d6875}"
-  enable: false
+  enable: true
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
@@ -83,8 +83,8 @@ component {
       }
       hasColor: true
       color {
-        r: 9
-        g: 135
+        r: 0
+        g: 170
         b: 0
       }
     }
