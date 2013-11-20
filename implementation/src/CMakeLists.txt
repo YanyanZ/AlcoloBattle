@@ -13,6 +13,8 @@ set(LIBRARY_SOURCES
 	ImplementationLibrary.cpp
 )
 set(ACTION_SOURCES
+	Component.cpp
+	Component.h
 	setEntityBooleanAction.h
 	setEntityBooleanAction.cpp
 	incrementAction.h

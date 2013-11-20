@@ -92,16 +92,16 @@ children {
               [mlv.toolset.proto.ActionNode.extension] {
                 actionName: "debugOut"
                 parameters {
+                  type: DoubleType
+                  name: "target.y"
+                  kbSelection: plainValue
+                  doubleValue: 3.5
+                }
+                parameters {
                   type: StringType
                   name: "text"
                   kbSelection: selectParameters
                   stringValue: "caption"
-                }
-                parameters {
-                  type: IntType
-                  name: "target.y"
-                  kbSelection: plainValue
-                  intValue: 2
                 }
               }
             }

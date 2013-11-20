@@ -6,6 +6,7 @@ namespace alcolo
 		: AbstractImplementationLibrary("alcolo")
 		, setEntityBoolean_()
 		, increment_ ()
+		, component_ (NULL)
 	{
 		// NOTHING
 	}
@@ -26,6 +27,19 @@ namespace alcolo
 		success = success && registerType<IncrementParams>(logger);
 		success = success && registerAction(increment_, logger);			
 		
+		//Components
+		if (getSimulationFramework() == 0)
+		{
+			MLV_LOG_WARNING(logger, "Unable to load the component from implementation library.");
+			success = true;
+		}
+		else
+		{
+			//create components
+			component_ = MLV_NEW templates::impl_lib::Component(*getSimulationFramework());
+			success = addComponent(*component_, logger);
+		}
+
 		return success;
 	}
 
@@ -42,6 +56,14 @@ namespace alcolo
 		if (success)
 			unregisterType<IncrementParams>();
 			
+		//Components
+		success = success && removeComponent(*component_, logger);
+		if (success)
+		{
+			MLV_DELETE component_;
+			component_ = 0;
+		}
+
 		return success;
 	}
 }
