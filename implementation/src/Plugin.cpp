@@ -9,15 +9,14 @@
 extern "C"
 {
     /** Create an implementation library instance */
-    PLUGIN_API void* createImplementationLibrary( mlv::utils::AbstractLogger* /*logger*/ )
+    PLUGIN_API void* createImplementationLibrary(mlv::utils::AbstractLogger* /*logger*/)
     {
-        return MLV_NEW alcolo::ImplementationLibrary();
+        return MLV_NEW templates::impl_lib::ImplementationLibrary();
     }
 
     /** Destroy an implementation library instance */
-    PLUGIN_API bool destroyImplementationLibrary( void* library, mlv::utils::AbstractLogger* /*logger*/ )
+    PLUGIN_API void destroyImplementationLibrary(void* library, mlv::utils::AbstractLogger* /*logger*/)
     {
-        MLV_DELETE static_cast<alcolo::ImplementationLibrary*>(library); 
-        return true;
+        MLV_DELETE static_cast<templates::impl_lib::ImplementationLibrary*>(library); 
     }
 }

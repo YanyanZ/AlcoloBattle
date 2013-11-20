@@ -31,6 +31,17 @@ update {
   numThreads: 1
   useFixedUpdateTimeDelta: false
 }
+implementationLibrary {
+  config {
+    platform: win_vc100_x86_d
+    pluginFile: "implementation/AlcoloBattle_vc100-mt-gd.dll"
+  }
+  config {
+    platform: win_vc100_x86
+    pluginFile: "implementation/AlcoloBattle_vc100-mt.dll"
+  }
+  name: "Test"
+}
 prototypeLibrary: "prototypes/ancestor.mlent"
 prototypeLibrary: "prototypes/barman.mlent"
 prototypeLibrary: "prototypes/client.mlent"
