@@ -5,6 +5,8 @@ version {
 }
 knowledge {
   knowledgeFile: "knowledge/global.mlkb"
+  knowledgeFile: "knowledge/secu.mlkb"
+  knowledgeFile: "knowledge/client.mlkb"
 }
 action {
 }
@@ -33,5 +35,5 @@ prototypeLibrary: "prototypes/ancestor.mlent"
 prototypeLibrary: "prototypes/barman.mlent"
 prototypeLibrary: "prototypes/client.mlent"
 prototypeLibrary: "prototypes/securit\351.mlent"
-population: "population/training.mlpop"
+population: "population/public.mlpop"
 debugger: false

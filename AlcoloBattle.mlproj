@@ -14,6 +14,9 @@ folder {
       location: "decision/talk.mlbt"
     }
   }
+  folder {
+    name: "secu"
+  }
   file {
     name: "barman.mlbt"
     location: "decision/barman.mlbt"
@@ -33,6 +36,14 @@ folder {
 }
 folder {
   name: "implementation"
+  file {
+    name: "tutorial_shared_implementation_lib_vc100-mt-gd.dll"
+    location: "implementation/tutorial_shared_implementation_lib_vc100-mt-gd.dll"
+  }
+  file {
+    name: "tutorial_shared_implementation_lib_vc100-mt.dll"
+    location: "implementation/tutorial_shared_implementation_lib_vc100-mt.dll"
+  }
 }
 folder {
   name: "knowledge"
@@ -47,6 +58,10 @@ folder {
   file {
     name: "global.mlkb"
     location: "knowledge/global.mlkb"
+  }
+  file {
+    name: "secu.mlkb"
+    location: "knowledge/secu.mlkb"
   }
 }
 folder {

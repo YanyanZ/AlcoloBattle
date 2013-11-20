@@ -6,6 +6,28 @@ version {
 root {
   type: Object
   objectValue {
+    key: "battles"
+    value {
+      type: Array
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Bool
+        boolValue: true
+      }
+    }
+  }
+  objectValue {
     key: "comptoirs"
     value {
       type: Array
